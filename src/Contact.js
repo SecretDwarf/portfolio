@@ -17,7 +17,7 @@ const ContactPage = () => {
         <h2 className='leaderboard'>Check out the leaderboard<br />at https://chromedino.com/</h2>
         <div className="right-arrow"></div>
         <div className="dino-container">
-          <iframe className='dino' src="https://chromedino.com/black/" frameborder="0" scrolling="no" loading="lazy"></iframe>
+          <iframe title="dino" className='dino' src="https://chromedino.com/black/" frameborder="0" scrolling="no" loading="lazy"></iframe>
         </div>
       </div>
     </main>
