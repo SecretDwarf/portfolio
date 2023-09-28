@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import FallingPixels from './components/FallingPixels';
 import { TypeAnimation } from 'react-type-animation';
-import Navigation from './components/Navigation';
 import logo from './assets/JB.png';
 
 
@@ -15,7 +14,6 @@ const Home = () => {
         </a>
       </div>
       <FallingPixels />
-      <Navigation />
       <section className="main-info">
         <div className="main-text">
           <h1>JACOB BRIGGS</h1>
@@ -27,9 +25,15 @@ const Home = () => {
                 1000,
                 'web designer',
                 1000,
+                'video game designer',
+                1000,
                 'team lead',
                 1000,
+                'Tutor',
+                1000,
                 'trumpet player',
+                1000,
+                'student',
                 1000,
               ]}
               repeat={Infinity}

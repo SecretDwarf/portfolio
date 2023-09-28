@@ -421,3 +421,23 @@ canvas {
   color: white;
   overflow: hidden;
 }
+/* 404 page */
+.NotFound{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.directions{
+  padding: 10px;
+  color:aliceblue;
+  display: flex;
+  align-items: center;
+  font-size: 3vh;
+  justify-content: center;
+}
+
+.linkContainer{
+  flex-direction: row;
+}
+
