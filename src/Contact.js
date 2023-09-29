@@ -10,17 +10,13 @@ const ContactPage = () => {
           <img src={logo} alt="Logo" className="logo-image" />
         </a>
       </div>
-      <div className="contact-container">
-        <h1>Contact Me</h1>
-        <ContactForm />
-        <h2 className='clickMe'>Click Him<br />Press Space<br />To Start</h2>
-        <h2 className='leaderboard'>Check out the leaderboard<br />at https://chromedino.com/</h2>
-        <div className="right-arrow"></div>
-        <div className="dino-container">
-          <iframe title="dino" className='dino' src="https://chromedino.com/black/" frameborder="0" scrolling="no" loading="lazy"></iframe>
-        </div>
-      </div>
-    </main>
+        <div className='belowLogo'></div>
+          <div className="contact-container">
+            <h1>Contact Me</h1>
+            <ContactForm />
+          </div>
+
+      </main>
   );
 };
 

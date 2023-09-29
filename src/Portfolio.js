@@ -1,6 +1,5 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Button from '@mui/material/Button';
+import { Fade } from "react-awesome-reveal";
 import Card from '@mui/material/Card';
 import logo from './assets/JB.png';
 import CardActions from '@mui/material/CardActions';
@@ -10,7 +9,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -87,13 +85,18 @@ export default function Portfolio() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <main>
-        <img src={logo} alt="Logo" className="logo-image" />
+        <div className="logo-container">
+          <a href="/">
+            <img src={logo} alt="Logo" className="logo-image" />
+          </a>
+        </div>
+        <div className='belowLogo'></div>
         {/* Hero unit */}
         <Box
           sx={{
             bgcolor: 'background.paper',
-            pt: 8,
-            pb: 6,
+            pt: 3,
+            pb: 3,
           }}
         >
           <Container maxWidth="sm">
@@ -120,6 +123,7 @@ export default function Portfolio() {
             </Stack>
           </Container>
         </Box>
+        <Fade cascade>
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
@@ -154,6 +158,7 @@ export default function Portfolio() {
             ))}
           </Grid>
         </Container>
+        </Fade>
       </main>
     </ThemeProvider>
   );

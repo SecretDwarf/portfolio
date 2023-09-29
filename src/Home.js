@@ -13,28 +13,25 @@ const Home = () => {
           <img src={logo} alt="Logo" className="logo-image" />
         </a>
       </div>
+        <div className='belowLogo'></div>
+    <div className='canvascontainer'>
       <FallingPixels />
+    </div>
       <section className="main-info">
         <div className="main-text">
           <h1>JACOB BRIGGS</h1>
           <span style={{ fontSize: '2em' }}>
-            <span> I am a</span> <br />
             <TypeAnimation
               sequence={[
-                'software engineer',
+                'Web Development',
                 1000,
-                'web designer',
+                'Game Development',
                 1000,
-                'video game designer',
+                'Servant Leader',
                 1000,
-                'team lead',
+                'Collaborator',
                 1000,
-                'Tutor',
-                1000,
-                'trumpet player',
-                1000,
-                'student',
-                1000,
+
               ]}
               repeat={Infinity}
             />

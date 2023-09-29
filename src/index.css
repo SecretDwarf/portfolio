@@ -3,13 +3,19 @@
 * {
   font-family: "Press Start 2P", cursive;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 /* logo */
 .logo-container {
   position: absolute;
+  color: white;
   top: 0;
   left: 0;
   z-index: 5;
+  background: #1589ff;
 }
 
 .logo-image {
@@ -18,23 +24,23 @@
 }
 
 /* home */
-body {
-  margin: 0;
-  padding: 0;
+.canvascontainer {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
 }
-
 .Home {
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 105%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .main-info {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -119,7 +125,7 @@ canvas {
 }
 /* Contact Page */
 
-.contact-container {
+.contact-page{
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -131,14 +137,21 @@ canvas {
   overflow: hidden;
 }
 
+.contact-container {
+  max-width: 80%;
+}
+
 .contact-container h1 {
+  align-items: center;
   margin-bottom: 1rem;
+  margin-top: 10%;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .contact-submit {
@@ -196,8 +209,7 @@ canvas {
   padding: 10px;
   padding: -5px;
   z-index: 2;
-  height: auto; 
-  overflow: hidden;
+  height: 100%;  
 }
 
 .doc-wrapper iframe {
@@ -246,7 +258,7 @@ canvas {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 24px;
+  font-size: 60%;
   cursor: pointer;
   animation: clickMeAnimation 5s infinite;
   transition: opacity 1s ease-in-out;
@@ -293,15 +305,56 @@ canvas {
   opacity: 0;
 }
 
+/* portfolio  */
+
+.portfolio-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+/* 404 page */
+.NotFound{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFound-text {
+  margin-top: 0%;
+}
+.directions{
+  padding: 10px;
+  color:aliceblue;
+  display: flex;
+  align-items: center;
+  font-size: 3vh;
+  justify-content: center;
+}
+
+.linkContainer{
+  flex-direction: row;
+}
+
+
 /* Responsive Styles */
 
 @media screen and (max-width: 768px) {
-  .main {
+  
+  /* .home {
     height: auto;
     padding: 20px;
     justify-content: flex-start;
-  }
+  } */
 
+  .main{
+    padding-top: 20%;
+  }
+  
   .main-info {
     position: static;
     transform: none;
@@ -327,117 +380,26 @@ canvas {
   }
 }
 
-/* chrome dino */
-
-/* Copyright 2013 The Chromium Authors. All rights reserved.
- * Use of this source code is governed by a BSD-style license that can be
- * found in the LICENSE file. */
- .dino-container {
-  position: fixed;
-  bottom: -50%;
-  left: 0;
-  width: 100%;
-  background-color: black;
-  height: calc(100% - 100px);
-  overflow: hidden;
+@media screen and (max-width: 426px) {
+.logo-container {
+  margin-top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.dino {
-  width: 95%;
-  height: 60%;
-  margin-top: -95px;
-}
-
-.clickMe {
-  position: absolute;
-  bottom: 5%;
-  font-size: small;
-  left: calc(5% - 30px);
-  color: #1589ff;
-  z-index: 5;
-  opacity: 1; 
-  transition: opacity 1s ease; 
-  opacity: 1; 
-}
-
-.right-arrow {
-  position: absolute;
-  bottom: 10%;
-  left: 15%;
-  width: 30px;
-  height: 0;
-  border: 2px solid #1589ff;
-  border-radius: 2px;
-  animation: jumpInfinite 1.5s infinite;
-  z-index: 5;
-}
-
-.leaderboard {
-  position: absolute;
-  bottom: 10%;
-  right: 15%;
-  z-index: 5;
-  font-size: small;
-}
-
-.dino-container:hover .clickMe {
-  opacity: 0;
-}
-
-.right-arrow:after {
-  content: " ";
-  position: absolute;
-  top: -10px;
-  left: 12px;
-  width: 16px;
-  height: 16px;
-  border-top: 4px solid #1589ff;
-  border-right: 4px solid #1589ff;
-  border-radius: 4px;
-  transform: rotateZ(45deg);
-}
-
-@keyframes jumpInfinite {
-  0% {
-    transform: translateX(0); 
-  }
-  50% {
-    transform: translateX(20px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* portfolio  */
-
-.portfolio-container {
-  background-color: black;
+.belowLogo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100vh;
-  color: white;
-  overflow: hidden;
-}
-/* 404 page */
-.NotFound{
-  display: flex;
-  align-items: center;
   justify-content: center;
+  margin-top: 100px;
 }
 
-.directions{
-  padding: 10px;
-  color:aliceblue;
-  display: flex;
-  align-items: center;
-  font-size: 3vh;
-  justify-content: center;
+.notFound-text{
+  line-height: 13px;
+  margin-top: -10px;
 }
 
-.linkContainer{
-  flex-direction: row;
+.clickme{
+  display: none;
 }
 
+}

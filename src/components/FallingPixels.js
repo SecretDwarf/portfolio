@@ -58,7 +58,7 @@ const FallingPixels = () => {
         fillStyle: `rgb(${rng(1, 255)},${rng(1, 255)},${rng(1, 255)})`,
         size: rng(1, 10),
         accel: rng(2, 6) / 100 + 1,
-        speed: rng(1, 3),
+        speed: rng(.5, 2),
       });
     };
 
