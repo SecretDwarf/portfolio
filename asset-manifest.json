@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/SecretDwarf/portfolio/static/css/main.900438fd.css",
-    "main.js": "/SecretDwarf/portfolio/static/js/main.7d68c936.js",
-    "static/media/cyan_amongus.png": "/SecretDwarf/portfolio/static/media/cyan_amongus.e3d21dbd699d5b9a0949.png",
-    "static/media/JB.png": "/SecretDwarf/portfolio/static/media/JB.efa037651e4d02887799.png",
-    "static/media/Resume.pdf": "/SecretDwarf/portfolio/static/media/Resume.11843aa19c0c050a01cd.pdf",
-    "index.html": "/SecretDwarf/portfolio/index.html",
-    "main.900438fd.css.map": "/SecretDwarf/portfolio/static/css/main.900438fd.css.map",
-    "main.7d68c936.js.map": "/SecretDwarf/portfolio/static/js/main.7d68c936.js.map"
+    "main.css": "/portfolio/static/css/main.900438fd.css",
+    "main.js": "/portfolio/static/js/main.bdc78c10.js",
+    "static/media/cyan_amongus.png": "/portfolio/static/media/cyan_amongus.e3d21dbd699d5b9a0949.png",
+    "static/media/JB.png": "/portfolio/static/media/JB.efa037651e4d02887799.png",
+    "static/media/Resume.pdf": "/portfolio/static/media/Resume.11843aa19c0c050a01cd.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.900438fd.css.map": "/portfolio/static/css/main.900438fd.css.map",
+    "main.bdc78c10.js.map": "/portfolio/static/js/main.bdc78c10.js.map"
   },
   "entrypoints": [
     "static/css/main.900438fd.css",
-    "static/js/main.7d68c936.js"
+    "static/js/main.bdc78c10.js"
   ]
 }
