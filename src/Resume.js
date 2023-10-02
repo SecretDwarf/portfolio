@@ -17,13 +17,11 @@ const Resume = () => {
       </div>
       <div className='belowLogo'></div>
       <div className="resume">
-        <h1>Download Resume</h1>
-        <div className="doc-wrapper">
-          {/* Download link for the PDF */}
-          <a href={resume} download="Resume.pdf">
-            <FontAwesomeIcon icon={faFilePdf} />
-          </a>
-        </div>
+        <h1>Resume - Download</h1>
+        {/* Download link for the PDF */}
+        <a href={resume} download="Resume.pdf">
+          <FontAwesomeIcon icon={faFilePdf} />
+        </a>
         <ResumeAnimation />
         <div className='clickme'>
           <ResumeAnimation2 />

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import cyan_amongus from './assets/cyan_amongus.png';
 import { useCallback } from "react";
 import Particles from "react-particles";
-import logo from './assets/JB.png';
 import { loadSlim } from "tsparticles-slim";
+import logo from './assets/JB.png';
 
 const NotFound = () => {
     const particlesInit = useCallback(async engine => {

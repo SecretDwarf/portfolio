@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from './components/ContactForm';
+// import ContactPixels from './components/contactPixels';
 import logo from './assets/JB.png';
 
 const ContactPage = () => {
@@ -15,7 +16,6 @@ const ContactPage = () => {
             <h1>Contact Me</h1>
             <ContactForm />
           </div>
-
       </main>
   );
 };
