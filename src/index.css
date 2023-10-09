@@ -349,10 +349,12 @@ canvas {
   .buttons {
     width: 100%;
     flex-direction: column;
+    align-items: center;
   }
-
+  
   .buttons #nav-button {
-    margin: 10px 0;
+    width: 75px;
+    margin: 20px;
   }
 }
 
