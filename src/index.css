@@ -54,9 +54,11 @@ body {
 }
 
 .main-text {
+
   border-bottom: 5px solid #1589ff;
-  margin-bottom: 20px;
-  max-width: 80%;
+  margin: 20px;
+  height: 100%;
+  width:100%;
 }
 
 h1 {
@@ -66,7 +68,7 @@ h1 {
 }
 
 .main-info span {
-  width: max-content;
+  width: 100%;
 }
 
 h1,
