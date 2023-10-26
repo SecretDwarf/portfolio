@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import logo from './assets/JB.png';
 
 
-const Home = () => {
+export default function Home() {
   return (
     <main className='Home'>
         <div className="logo-container">
@@ -53,4 +53,3 @@ const Home = () => {
   );
 };
 
-export default Home;

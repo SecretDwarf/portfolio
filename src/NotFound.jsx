@@ -5,7 +5,7 @@ import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import logo from './assets/JB.png';
 
-const NotFound = () => {
+export default function NotFound() {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         await loadSlim(engine);
@@ -38,11 +38,9 @@ const NotFound = () => {
                     <Link to='/' className="directions">Home</Link>
                     <Link to='/resume' className="directions">Resume</Link>
                     <Link to='/contact' className="directions">Contact</Link>
-                    <Link to='/portfolio' className="directions">Blog</Link>
+                    <Link to='/portfolio' className="directions">portfolio</Link>
                 </div>
             </div>
         </main>
     );
 };
-
-export default NotFound;

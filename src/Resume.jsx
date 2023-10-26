@@ -6,10 +6,10 @@ import resume from './assets/Resume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
 
-const Resume = () => {
+export default function Resume() {
 
   return (
-    <main>
+    <main className='ResumeMain'>
       <div className="logo-container">
         <a href="/">
           <img src={logo} alt="Logo" className="logo-image" />
@@ -18,7 +18,6 @@ const Resume = () => {
       <div className='belowLogo'></div>
       <div className="resume">
         <h1>Resume - Download</h1>
-        {/* Download link for the PDF */}
         <a href={resume} download="Resume.pdf">
           <FontAwesomeIcon icon={faFilePdf} />
         </a>
@@ -31,4 +30,3 @@ const Resume = () => {
   );
 };
 
-export default Resume;

@@ -6,7 +6,7 @@ import Contact from './Contact';
 import Portfolio from './Portfolio';
 import NotFound from './NotFound';
 
-const App = () => {
+export default function App() {
   return (
     <Router>
       <Routes>
@@ -20,4 +20,3 @@ const App = () => {
   );
 };
 
-export default App;
